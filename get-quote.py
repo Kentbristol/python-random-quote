@@ -1,15 +1,19 @@
-def primary():
-  print("Keep it logically awesome.")
+# -*- coding: utf-8 -*-
+"""
+Created on Fri Dec 18 14:27:53 2020
 
-  #f = open("quotes.txt")
-  #quotes = f.readlines()
-  #f.close()
+@author: yasuo
+"""
 
-  #print(quotes)
+import random
 
-if __name__== "__main__":
-  primary()
+last=13
+
+f = open("quotes.txt")
+quotes = f.readlines()
+f.close()
+
+rdn = random.randint(0,last)
 
 
-
-
+print(quotes[rdn])
